@@ -17,8 +17,14 @@
 ## Install the required dependencies:
 - pip install mysql-connector-python
 
+## Outputs
+- Adding an user
 ![Library System Screenshot 1](outputs/output1.png)
+- Lending a Book
 ![Library System Screenshot 2](outputs/output2.png)
+- Displaying availability of all books
 ![Library System Screenshot 3](outputs/output3.png)
+- Displaying all students List
 ![Library System Screenshot 4](outputs/output4.png)
+- Returing the book
 ![Library System Screenshot 5](outputs/output5.png)
