@@ -23,6 +23,7 @@
 
 
 - Lending a Book
+
 ![Library System Screenshot 2](outputs/output2.png)
 - Displaying availability of all books
 ![Library System Screenshot 3](outputs/output3.png)
