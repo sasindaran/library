@@ -20,6 +20,8 @@
 ## Outputs
 - Adding an user
 ![Library System Screenshot 1](outputs/output1.png)
+
+
 - Lending a Book
 ![Library System Screenshot 2](outputs/output2.png)
 - Displaying availability of all books
