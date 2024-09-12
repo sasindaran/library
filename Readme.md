@@ -16,3 +16,9 @@
 
 ## Install the required dependencies:
 - pip install mysql-connector-python
+
+![Library System Screenshot](outputs/output1.png)
+![Library System Screenshot](outputs/output2.png)
+![Library System Screenshot](outputs/output3.png)
+![Library System Screenshot](outputs/output4.png)
+![Library System Screenshot](outputs/output5.png)
