@@ -35,6 +35,6 @@
 
 ![Library System Screenshot 4](outputs/output4.png)
 
-- Returing the book
+- Returing the book & history of student
 
 ![Library System Screenshot 5](outputs/output5.png)
