@@ -29,6 +29,19 @@ def display_student_details(cursor, student_id):
     else:
         print("Student not found.")
 
+def delete_student(cursor, conn, student_id):
+    # Check if the student exists
+    cursor.execute("SELECT * FROM students WHERE student_lib_id = %s", (student_id,))
+    result = cursor.fetchone()
+
+    if result:
+        # Delete the student from the database
+        cursor.execute("DELETE FROM students WHERE student_lib_id = %s", (student_id,))
+        conn.commit()
+        print(f"Student with ID {student_id} has been deleted.")
+    else:
+        print("Student not found.")
+
 def display_all_students(cursor):
     cursor.execute("SELECT student_name, student_lib_id FROM students")
     all_students = cursor.fetchall()
@@ -36,3 +49,5 @@ def display_all_students(cursor):
     print("All Students:")
     for student in all_students:
         print(f" - {student[0]} (ID: {student[1]})")
+        
+

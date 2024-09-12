@@ -1,4 +1,4 @@
-from student import add_student, display_student_details, display_all_students
+from student import add_student, delete_student, display_student_details, display_all_students
 from book import add_book_to_student, drop_book_from_student, display_books_status
 
 def display_menu(cursor, conn):
@@ -10,7 +10,8 @@ def display_menu(cursor, conn):
         print("4. Display student details")
         print("5. Display book status (Available/Not Available)")
         print("6. Display all students and their IDs")
-        print("7. Exit")
+        print("7. Delete a student by ID")  # New option for deleting a student
+        print("8. Exit")
 
         choice = input("Enter your choice: ")
 
@@ -39,8 +40,11 @@ def display_menu(cursor, conn):
         elif choice == '6':
             display_all_students(cursor)
 
-        elif choice == '7':
-            break
+        elif choice == '7':  # Handle deletion of student
+            student_id = input("Enter student ID to delete: ")
+            delete_student(cursor, conn, student_id)
 
+        elif choice == '8':  # Exit
+            break
         else:
             print("Invalid choice. Please try again.")
